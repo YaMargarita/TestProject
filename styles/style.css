@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #edeef0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+body .container {
+  max-width: 1260px;
+  margin: auto auto;
+  height: 100vh;
+  padding-top: 30px;
+}
+
+.main {
+  height: 600px;
+  display: flex;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.chat-list {
+  width: 35%;
+  overflow-y: auto;
+  border-right: 1px solid #eaeaed;
+  background-color: #fff;
+}
+.chat-list .friends-list {
+  border-bottom: 1px solid #eaeaed;
+  padding: 10px;
+}
+.chat-list .user-list {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eaeaed;
+  cursor: pointer;
+}
+.chat-list .user-list .user-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.chat-list .user-list .user-name {
+  margin-left: 20px;
+}
+
+.main-chat {
+  width: 65%;
+  height: 100%;
+  background-color: #f6f6f7;
+}
+.main-chat .message-area {
+  height: 90%;
+  overflow-y: auto;
+}
+.main-chat .message-area .message {
+  padding: 10px;
+  max-width: 300px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-chat .message-area .message .message-text {
+  overflow-x: hidden;
+  margin-left: auto;
+  max-width: 200px;
+  color: #fff;
+  background-color: #0577f8;
+  padding: 5px;
+  border-radius: 5px;
+}
+.main-chat .message-area .message .user-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  margin-left: 20px;
+}
+.main-chat .message-area:first-child {
+  padding-top: 10px;
+}
+.main-chat .message-panel {
+  display: flex;
+  height: 10%;
+  width: 100%;
+}
+.main-chat .message-panel .input-message {
+  width: 90%;
+  height: 100%;
+  border: 1px solid #eaeaed;
+  font-size: 18px;
+  padding: 5px;
+  color: #868686;
+}
+.main-chat .message-panel .send-message {
+  width: 10%;
+  height: 100%;
+  cursor: pointer;
+  border: 1px solid #eaeaed;
+  background: url("../icons/send.png") no-repeat 50% 50%;
+  background-size: contain;
+}
+
+button:active, button:focus {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+input:active, input:focus {
+  outline: none;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+}
+
+.active_user {
+  background-color: #e9e9e9;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- MAIN -->
+        <main class="main">
+
+            <!--CHAT-LIST -->
+            <section class="chat-list">
+                <h3 class="friends-list">Список друзей:</h3>
+                <div class="user-list" id="user1">
+                    <img src="photo/user1.jpg" alt="фото пользователя" class="user-img">
+                    <h4 class="user-name">Джулия</h4>
+                </div>
+                <div class="user-list" id="user2">
+                    <img src="photo/user2.jpg" alt="фото пользователя" class="user-img">
+                    <h4 class="user-name">Майк</h4>
+                </div>
+                <div class="user-list" id="user3">
+                    <img src="photo/user3.jpg" alt="фото пользователя" class="user-img">
+                    <h4 class="user-name">Джейкоб</h4>
+                </div>
+                <div class="user-list" id="user4">
+                    <img src="photo/user4.jpg" alt="фото пользователя" class="user-img">
+                    <h4 class="user-name">Эмилия</h4>
+                </div>
+            </section>
+            <!--CHAT-LIST -->
+
+
+            <!--MAIN-CONTENT -->
+            <section class="main-chat">
+                <div class="message-area">
+
+                </div>
+                <div class="message-panel">
+                    <input type="text" class="input-message" placeholder="Введите ваше сообщение">
+                    <button class="send-message"></button>
+                </div>
+            </section>
+            <!--MAIN-CONTENT -->
+        </main>
+        <!-- MAIN -->
+    </div>
+
+<script src="js/LocalStorage.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
