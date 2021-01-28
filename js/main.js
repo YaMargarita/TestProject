@@ -15,7 +15,7 @@ class Message {
         let message = '';
         let str = '';
         messageList.forEach(function (item){
-            str = `<div class="message-text">${item}</div>
+            str = `<div class="message-text hyphenate">${item}</div>
                 <img src="${messageUtil.img_path}" alt="" class="user-icon">`;
             message += `<div class='message'>${str}</div>`
         });
@@ -37,6 +37,8 @@ class Message {
         message_text.classList.add('message-text');
         message_text.classList.add('message-text_right');
         message_text.textContent = text;
+
+        message_text.classList.add('hyphenate');
 
         let img = document.createElement('img');
         img.classList.add('user-icon');
